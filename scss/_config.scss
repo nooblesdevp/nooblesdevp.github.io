@@ -1,0 +1,29 @@
+$body-color : #252627;
+$nav-color : #181818;
+$title-color : #707070;
+$title-color1 : #ED5565;
+$title-color2 : #48cfad;
+$text-color : #bebebe;
+$progress-color : #1785a7;
+$progress-color1 : #48cfad;
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin flex-wrap-skill-p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}

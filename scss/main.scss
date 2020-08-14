@@ -1,0 +1,69 @@
+@import 'config';
+@import 'home' ;
+@import 'about';
+@import 'skills';
+@import 'contact-and-footer';
+@import 'project';
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 0 100px;
+}
+
+nav ul,
+.main-info-section,
+.work-category{
+   @include flex-wrap;
+}
+
+body{
+    background: $body-color;
+}
+
+a{
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+
+    
+}
+
+header h1,
+header a,
+.text p,
+.about h1,
+.skills h1,
+.work h1,
+.contact h1{
+    color: $title-color;
+}
+
+.about h1,
+.work h1{
+    font-size: 10rem;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.skills h1,
+.contact h1{
+    text-align: right;
+    font-size: 10rem;
+    opacity: .1;
+}
+
+.bar-html,
+.bar-css,
+.bar-javascript,
+.bar-reactjs
+.bar-ps{
+    width: calc( 0 - 6px );
+}

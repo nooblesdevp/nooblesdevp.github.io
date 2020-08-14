@@ -1,0 +1,59 @@
+@import 'config';
+
+.skills{
+    height: 100vh;
+
+    .skills-info{
+        font-size: 1.4rem;
+        color: $text-color;
+        max-width: 800px;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .skills-bar{
+        @include flex-wrap-skill-p;
+        
+    }
+
+    div[class^='tag-'] {
+       clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+       width: 120px;
+       height: 30px;
+       background-color: $progress-color;
+       margin-right: 30px;
+
+       p{
+           color: #fff;
+           text-align: left;
+           padding-left: 10px;
+           font-size: 1.1rem;
+           padding-top: 3px;
+       }
+
+    }
+
+    .progressbar{
+        position: relative;
+        width: 600px;
+        height: 20px;
+        border: 2px solid $progress-color1;
+        border-radius: 20px;
+        margin-top: 7px;
+
+        div[class^='bar-']{
+            position: absolute;
+            background: $progress-color;
+            height: 10px;
+            border-radius: 20px;
+            margin: 2.7px;
+            
+        }
+    }
+
+}
+

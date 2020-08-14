@@ -1,0 +1,60 @@
+@import 'config';
+
+// contact
+.contact{
+    margin-top: 50px;
+
+
+    form input, form textarea{
+        display: block;
+        width: 500px;
+        padding: 20px;
+        margin: 20px 0;
+        background: $body-color;
+        border: 3px solid $title-color;
+        outline: none;
+        font-size: 1.2rem;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+    }
+
+    textarea{
+        resize: vertical;
+    }
+
+    button{
+        width: 150px;
+        display: block;
+        background: $title-color;
+        border: none;
+        cursor: pointer;
+        margin: 20px auto;
+        padding: 15px 30px;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: .5s ease;
+
+        &:hover{
+            background: $title-color1;
+        }
+    }
+}
+// footer
+footer{
+    hr{
+        border: 2px solid $title-color;
+        margin-top: 80px;
+    }
+
+    p{
+        text-align: center;
+        color: $title-color;
+        font-size: 1.2rem;
+        padding: 30px 0;
+
+    }
+}
