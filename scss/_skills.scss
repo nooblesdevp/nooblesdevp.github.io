@@ -22,10 +22,11 @@
 
     div[class^='tag-'] {
        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
-       width: 120px;
+       width: 130px;
        height: 30px;
        background-color: $progress-color;
        margin-right: 30px;
+       padding-top: 3px;
 
        p{
            color: #fff;
@@ -54,6 +55,17 @@
             
         }
     }
+    
+    div[class^='bar-']{
+        position: absolute;
+        background: $progress-color;
+        height: 10px;
+        border-radius: 20px;
+        margin: 2.7px;
+        
+    }
+
+    
 
 }
 
