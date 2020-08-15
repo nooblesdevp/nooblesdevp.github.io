@@ -65,7 +65,7 @@ header{
 
         }
 
-        a{
+        .contact{
             padding: 12px 25px;
             background: none;
             border: 3px solid $title-color1;
@@ -73,7 +73,7 @@ header{
             font-size: .8rem;
             letter-spacing: 2px;
             position: relative;
-            top: 80px;
+            top: 50px;
             overflow: hidden;
             transition: 0.5s ease;
             display: inline-block;
@@ -103,6 +103,20 @@ header{
                 
             }
 
+        }
+        .social-links{
+            margin-top: 90px;
+
+            i{
+                color: grey;
+                font-size: 2.5rem;
+                margin-right: 10px;
+                transition: .5s all ease;
+
+                &:hover{
+                    color: $title-color2;
+                }
+            }
         }
     }
 
