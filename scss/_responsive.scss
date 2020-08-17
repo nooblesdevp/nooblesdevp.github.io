@@ -1,0 +1,296 @@
+@include md-1024{
+
+    .about h1,
+    .work h1,
+    .skills h1,
+    .contact h1{
+        font-size: 9rem !important;
+    }
+
+
+    .text{
+
+        h1{
+            font-size: 2.5rem !important;
+        }
+       
+    }
+
+    .profile-img img{
+        width: 250px !important;
+    }
+
+    p{
+        letter-spacing: 2px !important;
+        word-spacing: 8px !important;
+        font-size: .7rem !important;
+
+    }
+    
+    .about{
+        margin-top: -50px !important;
+    }
+    .about img{
+        width: 280px !important;
+    }
+
+    .about-me-info{
+
+        width: 700px !important;
+    }
+
+    .skills-title{
+       margin-left: 450px !important;
+    }
+
+    .work{
+        margin-top: -140px !important;
+    }
+
+    .work-category{
+        margin: 50px !important;
+    }
+
+    form button ,input{
+        font-size: 1rem !important;
+    }
+
+}
+// tablet 
+@include md-768{
+    
+    
+    .about h1,
+    .work h1,
+    .skills h1,
+    .contact h1{
+        font-size: 5rem !important;
+    }
+
+    .text{
+        h1{
+            font-size: 2rem !important;
+        }
+        p{
+            font-size: .7rem !important;
+            word-spacing: 4px !important;
+            letter-spacing: 2px !important;
+        }
+    }
+    
+    .container{
+        padding: 0 60px !important;
+    }
+
+    .text{
+        margin-top: 80px !important;
+
+        h1{
+            font-size: 1.8rem;
+        }
+
+        .contact{
+            margin-top: 20px !important;
+        }
+
+        .social-links{
+            margin-top: 70px !important;
+            i{
+                font-size: 2rem !important;    
+            }
+        }
+
+    }
+
+    .profile-img img{
+        width: 140px !important ;
+        border-bottom-left-radius: 70px !important;
+    }
+
+    
+
+    .skills-title{
+        margin-left: 440px !important;
+        margin-bottom: 20px;
+    }
+
+    div[class^='tag-']{
+        width: 110px !important;
+        padding-top: 5px !important;
+
+        p{
+            font-size: .8rem !important;
+        }
+    }
+
+    .progressbar{
+        width: 500px !important;
+
+        div[class^='bar-']{
+            height: 14px !important;
+           margin: 1px !important;
+        }
+    }
+    
+    .work{
+        margin-top: 280px !important;
+    }
+
+    .about{
+
+        margin-top: 100px !important;
+
+        .about-me-info{
+            width: 550px !important;
+            margin-top: 30px !important;
+            padding: 30px !important;
+
+            p, .achivment li{
+                font-size: 1rem !important;
+            }
+        }
+
+        img{
+            width: 220px !important;
+            margin-top: 60px !important;
+        }
+    }
+
+    .work-category button{
+        font-size: .9rem !important;
+        border: 2px solid $title-color1 !important;
+        padding: 10px 25px  !important;
+    }
+
+}
+
+// mobile phone 
+@include md-425  {
+
+    .about h1,
+    .work h1,
+    .skills h1,
+    .contact h1{
+        font-size: 3.5rem !important;
+    }
+
+    .container{
+        padding: 0 30px !important;
+    }
+
+    header{
+        display: flex !important;
+        justify-content: space-between !important;
+        position: relative;
+
+        nav{
+          
+            ul{
+                height: 90vh;
+                top: 14vh;
+                right: -30px;
+                position: absolute;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                background: $nav-color;
+                z-index: 2;
+                
+               li{
+                   margin: 20px 0 !important;
+               }
+            }
+        }
+    }
+
+
+    .about{
+
+        .about-me-info{
+            width: 300px !important;
+
+            padding: 10px !important;
+
+            .achivment-ol{
+                margin-left: 20px !important;
+            }
+            p, h3, h4, .achivment li, .achivment-ol li{
+                font-size: .9rem !important ;
+                
+            }
+    
+        }
+        
+    }
+
+    .skills-title{
+        margin-left: 210px !important;
+    
+    }
+
+    .contact{
+        form input, form textarea{
+            width: 300px !important;
+            font-size: .9rem !important;
+        }
+    }
+
+
+    .main-info-section{
+        height:  auto !important;
+        .text{
+            margin-top: 300px !important;
+        }
+
+        img{
+           position: absolute !important;
+           top: -40px !important;
+           margin-left: 26% !important;
+           border-radius: 10% !important;
+        }
+    }
+
+    .about{
+       
+        .about-me-info{
+            top: -55px !important;
+        }
+    }
+
+    .progressbar{
+        width: 200px !important;
+        height: 15px !important;
+
+        div[class^='bar-']{
+            height: 9px !important;
+        }
+    }
+
+    div[class^='tag-']{
+        width: 90px !important;
+        height: 25px !important;
+        margin-top: 4px !important;
+        
+        p{
+            font-size: .6rem !important;
+        }
+    }
+
+    .work-category{
+        button{
+            &:last-child{
+                margin-top: 20px !important;
+            }
+        }
+    }
+
+    .burger div{
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background: #fff;
+        transition:  all .3s ease;
+    }
+   
+}

@@ -27,3 +27,21 @@ $progress-color1 : #48cfad;
     margin-bottom: 50px;
 
 }
+
+@mixin md-1024 {
+    @media screen and (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin md-768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin md-425 {
+    @media screen and (max-width: 425px){
+        @content;
+    }
+}
