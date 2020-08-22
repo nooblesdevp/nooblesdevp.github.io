@@ -184,24 +184,22 @@
         position: relative;
 
         .navbar-menu{
+            height: 90vh;
+            top: 14vh;
+            right: -30px;
+            position: absolute;
+            display: flex;
+            flex-direction: column ;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            background: $nav-color;
+            z-index: 2;
+            transform: translateX(100%);
           
-            .navlink{
-                height: 90vh;
-                top: 14vh;
-                right: -30px;
-                position: absolute;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                width: 50%;
-                background: $nav-color;
-                z-index: 2;
-                transform: translateX(100%);
-                
-               li{
-                   margin: 20px 0 !important;
-                   opacity: 1;
-               }
+            li{
+                margin: 20px 0 !important;
+                opacity: 1;
             }
         }
         .burger div{
@@ -224,6 +222,10 @@
         }
         .toggle .line3{
             transform: rotate(45deg) translate(-5px, -6px);
+        }
+
+        .burger{
+            display: block !important;
         }
     
     }
@@ -320,6 +322,6 @@
     }
     to{
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }

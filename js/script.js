@@ -11,8 +11,8 @@ spans.forEach(span => span.addEventListener('mouseout', function(e) {
 // navbar
 const navSlide = () =>{
     const burger =  document.querySelector('.burger');
-    const nav = document.querySelector('.navlink');
-    const navLinks = document.querySelectorAll('.navlink li')
+    const nav = document.querySelector('.navbar-menu');
+    const navLinks = document.querySelectorAll('.navbar-menu li')
 
     burger.addEventListener('click', () =>{
         //toggle nav
@@ -22,7 +22,7 @@ const navSlide = () =>{
             if(link.style.animation) {
                 link.style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forward ${index / 5}s`
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5}s`
             }
         });
         //burger animated
