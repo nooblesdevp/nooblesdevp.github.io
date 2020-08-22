@@ -9,6 +9,7 @@
 
 html{
     scroll-behavior: smooth;
+   // overflow-x: hidden;
 }
 
 .container{
@@ -24,6 +25,7 @@ nav ul,
 
 body{
     background: $body-color;
+    //overflow-x: hidden;
 }
 
 a{

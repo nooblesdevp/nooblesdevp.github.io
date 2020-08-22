@@ -8,6 +8,29 @@ spans.forEach(span => span.addEventListener('mouseout', function(e) {
     span.classList.remove('animated', 'rubberBand')
 }));
 
+// navbar
+const navSlide = () =>{
+    const burger =  document.querySelector('.burger');
+    const nav = document.querySelector('.navlink');
+    const navLinks = document.querySelectorAll('.navlink li')
+
+    burger.addEventListener('click', () =>{
+        //toggle nav
+        nav.classList.toggle('nav-active');
+        //animated links
+        navLinks.forEach((link, index) => {
+            if(link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forward ${index / 5}s`
+            }
+        });
+        //burger animated
+        burger.classList.toggle('toggle');
+    });
+}
+navSlide();
+
 // animation skills bar
 const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')

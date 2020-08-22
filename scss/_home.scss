@@ -8,6 +8,9 @@ header{
 }
 .navbar{
     background: $nav-color;
+//     display: flex;
+//    justify-content: space-around;
+//    align-items: center;
 
     li{
         margin-left: 30px;
@@ -27,7 +30,7 @@ header{
         
     }
     .burger{
-       // display: none;
+        display: none;
     }
 }
 
