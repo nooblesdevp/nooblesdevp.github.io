@@ -28,9 +28,23 @@
         }
         .achivment{
             margin-left: 20px;
+
+            a{
+                font-size: 1.3rem;
+                text-transform: lowercase;
+                color: $text-color;
+                transition: .5s ease;
+                &:hover{
+                    color: #fff;
+                }
+            }
         }
         .achivment-ol{
             margin-left: 60px;
+
+            li{
+                margin: 5px 0;
+            }
         }
          li{
              margin: 20px 0;
