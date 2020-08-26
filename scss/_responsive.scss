@@ -7,7 +7,6 @@
         font-size: 9rem !important;
     }
 
-
     .text{
 
         h1{
@@ -67,6 +66,13 @@
         font-size: 5rem !important;
     }
 
+    .logo a{
+        margin-top: -10px !important;
+    }
+
+    .navbar-menu{
+        margin-top: -15px !important;
+    }
     .text{
         h1{
             font-size: 2rem !important;
@@ -185,14 +191,14 @@
 
         .navbar-menu{
             height: 90vh;
-            top: 14vh;
+            top: 12vh;
             right: -30px;
             position: absolute;
             display: flex;
             flex-direction: column ;
             justify-content: center;
             align-items: center;
-            width: 50%;
+            width: 60%;
             background: $nav-color;
             z-index: 2;
             transform: translateX(100%);
@@ -201,6 +207,12 @@
                 margin: 20px 0 !important;
                 opacity: 1;
             }
+        }
+        .burger{
+            margin-top: 3px !important;
+        }
+        .logo h1{
+            margin-top: -4px !important;
         }
         .burger div{
             width: 30px;
