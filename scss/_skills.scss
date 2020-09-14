@@ -2,6 +2,7 @@
 
 .skills{
     height: 100vh;
+    margin-bottom: 100px;
 
     .skills-info{
         font-size: 1.4rem;
@@ -59,14 +60,6 @@
         }
     }
     
-    div[class^='bar-']{
-        position: absolute;
-        background: $progress-color;
-        height: 10px;
-        border-radius: 20px;
-        margin: 2.7px;
-        
-    }
 
     .skills-title{
        display: inline-block;
