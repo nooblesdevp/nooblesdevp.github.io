@@ -31,6 +31,24 @@ const navSlide = () =>{
 }
 navSlide();
 
+//b --- button to Top
+var toTopBtn = document.getElementById("toTopBtn");
+// when the user scrolls down 20px ffrom the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+        toTopBtn.style.display = "block";
+    } else {
+        toTopBtn.style.display = "none";
+    }
+}
+//when the user click on the button, scroll to the top of the document
+function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 // animation skills bar
 const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')
