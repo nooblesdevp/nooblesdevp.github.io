@@ -28,6 +28,12 @@ $progress-color1 : #48cfad;
 
 }
 
+@mixin md-1366 {
+    @media screen and (max-width:1366px) {
+        @content;
+    }
+}
+
 @mixin md-1024 {
     @media screen and (max-width: 1024px){
         @content;
