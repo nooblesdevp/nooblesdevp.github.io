@@ -1,3 +1,9 @@
+@include md-1366{
+    .work h1{
+        margin-top: 220px !important;
+    }
+}
+
 @include md-1024{
 
     .about h1,
@@ -121,10 +127,18 @@
 
     .skills-title{
         margin-left: 440px !important;
-        margin-bottom: 20px;
+       // margin-bottom: 20px;
         h1{
-            margin-top: -100px !important;
+            margin-top: -200px !important;
         }
+    }
+
+    .skills-info{
+        margin-top: -50px !important;
+       margin-left: 120px !important;
+       // background: #FFF;
+        float: center;
+        
     }
 
     div[class^='tag-']{
@@ -271,7 +285,18 @@
 
     .skills-title{
         margin-left: 210px !important;
-    
+        margin-bottom: 0px !important;
+            h1{
+                margin-top: -250px !important;
+               
+            }
+    }
+
+   
+    .skills-info{
+       // margin-top: 0px !important;
+        float: center;
+        transform: translateX(-99%) !important;
     }
 
     .contact{
@@ -323,7 +348,7 @@
     }
 
     .work h1{
-        margin-top: 250px !important;
+        margin-top: -40px !important;
     }
 
     .work-category{
