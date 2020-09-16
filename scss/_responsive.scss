@@ -363,6 +363,43 @@
    
 }
 
+// mobile 375
+@include md-375{
+    .profile-img img{
+        
+        margin-left: 88px !important;
+    }
+
+    .text h1{
+        font-size: 1.8rem !important;
+    }
+
+    .skills-title h1{
+        transform: translateX(-40%);
+    }
+
+    .skills-info{
+       transform: translateX(-278px) !important;
+      // margin-top: -400px !important;
+       width: 100% !important;
+       //margin-right: -80px !important;
+    }
+
+    .progressbar{
+        width: 150px !important;
+    }
+
+    .work h1{
+        margin-top: 200px !important;
+    }
+
+    .work-category{
+        margin: 20px !important;
+    }
+}
+
+
+//keyframes burger menu
 @keyframes navLinkFade {
     from{
         opacity: 0;

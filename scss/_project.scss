@@ -9,7 +9,7 @@
        
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
         grid-gap: 15px;
         //position: relative;
       
@@ -70,6 +70,7 @@
         .active{
             color: #fff;
              background: $title-color1;
+             font-weight: bolder;
          }
           
     }
