@@ -1,3 +1,20 @@
+// alert message
+//get all element with class closeBtn
+var close = document.getElementsByClassName("closeBtn");
+var i;
+//loop throug all close buttons
+for (i = 0; i < close.length; i++) {
+    //when someone click on a close button
+    close[i].onclick = function() {
+        //get the parent of span class="closebtn"
+        var div = this.parentElement;
+        //set the opacity of div to 0 
+        div.style.opacity = "0";
+        //hide the div after 600ms
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+
 // animation title
 const spans = document.querySelectorAll('h1 span');
 spans.forEach(span => span.addEventListener('mouseover', function(e) {
@@ -35,9 +52,8 @@ navSlide();
 var toTopBtn = document.getElementById("toTopBtn");
 // when the user scrolls down 20px ffrom the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction(){
-    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+    if(document.body.scrollTop > 60 || document.documentElement.scrollTop > 60 ){
         toTopBtn.style.display = "block";
     } else {
         toTopBtn.style.display = "none";
@@ -97,3 +113,20 @@ const showRequiredCategory = event => {
     getCategory.classList.remove('hideCategory')
     getCategory.classList.add('showCategory')
 }
+
+//alert message 
+$(window).on('scroll', function(){
+    if ($(window).scrollTop() >= $('.work').offset().top + $('.work').outerHeight() - window.innerHeight) {
+
+        alert('test');
+    }
+});
+
+$(window).on('scroll', function() { 
+    if ($(window).scrollTop() >= $( 
+      '.work').offset().top + $('.work'). 
+        outerHeight() - window.innerHeight) { 
+        
+        alert('You reached the end of the DIV'); 
+    } 
+}); 
