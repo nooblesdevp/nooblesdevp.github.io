@@ -72,3 +72,38 @@ header a,
 .bar-ps{
     width: calc( 0 - 6px );
 }
+
+/* The alert message box */
+.alert {
+    padding: 14px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    opacity: 1;
+  transition: opacity 0.6s; /* 600ms to fade out */
+    width: 85%;
+    margin: auto;
+
+    a{
+        text-transform: capitalize;
+        color: white;
+        font-weight: bolder;
+    }
+  }
+  
+  .alert.info {background-color: $title-color2;}
+  /* The close button */
+  .closeBtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closeBtn:hover {
+    color: black;
+  }
