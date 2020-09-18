@@ -114,19 +114,3 @@ const showRequiredCategory = event => {
     getCategory.classList.add('showCategory')
 }
 
-//alert message 
-$(window).on('scroll', function(){
-    if ($(window).scrollTop() >= $('.work').offset().top + $('.work').outerHeight() - window.innerHeight) {
-
-        alert('test');
-    }
-});
-
-$(window).on('scroll', function() { 
-    if ($(window).scrollTop() >= $( 
-      '.work').offset().top + $('.work'). 
-        outerHeight() - window.innerHeight) { 
-        
-        alert('You reached the end of the DIV'); 
-    } 
-}); 
